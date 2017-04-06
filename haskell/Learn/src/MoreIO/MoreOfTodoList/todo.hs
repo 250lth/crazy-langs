@@ -10,6 +10,7 @@ dispatch :: String -> [String] -> IO ()
 dispatch "add" = add
 dispatch "view" = view
 dispatch "remove" = remove
+dispatch command = doesntExist command
 
 main = do
     (command:argList) <- getArgs
@@ -43,3 +44,8 @@ remove [fileName, numberString] = do
             hClose tempHandle
             removeFile "todo.txt"
             renameFile tempName "todo.txt")
+
+--- a model to handle error input
+doesntExist :: String -> [String] -> IO ()
+doesntExist command _ =
+    putStrLn $ "The " ++ command ++ " command doesn't exist"
