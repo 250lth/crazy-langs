@@ -1,0 +1,12 @@
+/target
+/classes
+/checkouts
+pom.xml.asc
+*.jar
+*.class
+/.lein-*
+/.nrepl-port
+.hgignore
+.hg/
+将删除 .idea/workspace.xml
+将删除 resources/
