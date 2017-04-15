@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ReplState" timestamp="1492260345192">{:repl-history {:ide [], :local [{:command &quot;(ns guestbook.routes.home\n  (:require [compojure.core :refer :all]\n            [guestbook.views.layout :as layout]))&quot;, :offset 116, :ns &quot;guestbook.routes.home&quot;} {:command &quot;(defn home []\n  (layout/common [:h1 \&quot;Hello World!\&quot;]))&quot;, :offset 53, :ns &quot;guestbook.routes.home&quot;} {:command &quot;(start-server)&quot;, :offset 14, :ns &quot;user&quot;} {:command &quot;(use 'guestbook.routes.home)&quot;, :offset 28, :ns &quot;user&quot;} {:command &quot;home &quot;, :offset 5, :ns &quot;user&quot;} {:command &quot;(use 'guestbook.repl)&quot;, :offset 21, :ns &quot;user&quot;} {:command &quot;start-server&quot;, :offset 12, :ns &quot;user&quot;}], :remote []}}</component>
+</project>
