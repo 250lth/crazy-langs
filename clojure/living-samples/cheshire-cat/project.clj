@@ -9,7 +9,8 @@
                  [ring/ring-json "0.4.0"]
                  [org.clojure/clojurescript "1.9.293"]
                  [cljs-http "0.1.42"]
-                 [org.clojure/core.async "0.2.395"]]
+                 [org.clojure/core.async "0.2.395"]
+                 [enfocus "2.1.1"]]
   :plugins [[lein-ring "0.9.7"]
             [lein-cljsbuild "1.1.4"]]
   :ring {:handler cheshire-cat.handler/app}
