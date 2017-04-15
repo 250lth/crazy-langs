@@ -1,4 +1,5 @@
-(ns cheshire-cat.core)
+(ns cheshire-cat.core
+      (:require [clojure.browser.repl :as repl]))
 
 (defn ^:export init []
-      (js/alert "This is fun!!!"))
+      (repl/connect "http://localhost:9000/repl"))
