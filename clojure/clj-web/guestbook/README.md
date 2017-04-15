@@ -1,6 +1,7 @@
 # guestbook
 
-FIXME
+A simple clojure web app using ring.
+It can store username and the user's message and show it in the page.
 
 ## Prerequisites
 
