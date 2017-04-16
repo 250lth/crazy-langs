@@ -76,11 +76,23 @@ res20 = Just 3 >> Nothing
 res21 = return (0,0) >>= landLeft 1 >> Nothing >>= landRight 1
 
 -- Maybe as a value with context, give it to functions
-routine :: Maybe Pole
-routine = case landLeft 1 (0,0) of
+routine' :: Maybe Pole
+routine' = case landLeft 1 (0,0) of
     Nothing -> Nothing
     Just pole1 -> case landRight 4 pole1 of
         Nothing -> Nothing
         Just pole2 -> case landLeft 2 pole2 of
             Nothing -> Nothing
             Just pole3 -> landLeft 1 pole3
+
+
+--- Using do notation
+
+routine :: Maybe Pole
+routine = do
+    start <- return (0,0)
+    first <- landLeft 2 start
+    second <- landRight 2 first
+    landLeft 1 second
+
+res22 = routine
