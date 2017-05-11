@@ -61,3 +61,9 @@ end
 movie = Movie.new(1)
 movie.title = "Doctor Strangelove"
 movie.director = "Stanley Kubrick"
+
+require_relative '../test/assertions'
+expected_sql = ["INSERT INTO movies (id) VALUES (1)",
+                "UPDATE movies SET title='Doctor Strangelove' WHERE id=1",
+                "UPDATE movies SET director='Stanley Kubrick' WHERE id=1"]
+assert_equals expected_sql, Database.read_sql
