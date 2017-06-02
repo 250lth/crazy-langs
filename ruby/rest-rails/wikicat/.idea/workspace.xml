@@ -1,74 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23dff590-4f8a-4362-9bbf-26d4e4d07760" name="Default" comment="remove rails-api and spring in Gemfile">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/.keep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/channels/.keep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/concerns/.keep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/concerns/.keep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/.keep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tasks/.keep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/.keep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/apple-touch-icon-precomposed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/apple-touch-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/controllers/.keep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/.keep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/files/.keep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/helpers/.keep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/integration/.keep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/mailers/.keep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/models/.keep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/system/.keep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/wikicat.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Rakefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/application_record.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/category.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/bundle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/rails" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/rake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/setup" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/spring" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/update" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/yarn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config.ru" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/boot.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/cable.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/database.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/environment.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/environments/test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/secret_token.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/wrap_parameters.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/locales/en.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/puma.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/secrets.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/spring.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20170602132056_create_categories.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/422.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/500.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/robots.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/application_system_test_case.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/categories.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/models/category_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/test_helper.rb" />
-    </list>
+    <list default="true" id="23dff590-4f8a-4362-9bbf-26d4e4d07760" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -93,11 +26,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="220">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20170602132056_create_categories.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20170602132056_create_categories.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="13" column="61" lean-forward="false" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20170602133351_create_links.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20170602133351_create_links.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="15" column="57" lean-forward="false" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -123,6 +76,8 @@
       <list>
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/db/migrate/20170602132056_create_categories.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20170602133351_create_links.rb" />
       </list>
     </option>
   </component>
@@ -189,7 +144,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wikicat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wikicat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -509,12 +482,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1496408717974</updated>
-      <workItem from="1496408720913" duration="990000" />
+      <workItem from="1496408720913" duration="1900000" />
     </task>
+    <task id="LOCAL-00001" summary="remove rails-api and spring in Gemfile">
+      <created>1496409714940</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1496409714940</updated>
+    </task>
+    <task id="LOCAL-00002" summary="modify the migrate files before migrate">
+      <created>1496410550448</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1496410550448</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="990000" />
+    <option name="totallyTimeSpent" value="1900000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="0" width="1323" height="768" extended-state="6" />
@@ -545,6 +533,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="remove rails-api and spring in Gemfile" />
+    <MESSAGE value="modify the migrate files before migrate" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify the migrate files before migrate" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -568,8 +561,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="220">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170602132056_create_categories.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="61" lean-forward="false" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170602133351_create_links.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="57" lean-forward="false" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
           <folding />
         </state>
       </provider>
