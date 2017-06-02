@@ -10,6 +10,11 @@ gem 'rails', '~> 5.1.1'
 
 gem 'mysql2'
 
+gem 'active_model_serializers'
+group :doc do
+  gem 'sdoc'
+end
+
 
 
 # To use ActiveModel has_secure_password
