@@ -9,6 +9,14 @@
 -module(useless).
 -author("lth").
 -compile([debug_info, export_all]).
+-define(HOUR, 3600).
+-define(sub(X, Y), X-Y).
+
+-ifdef(DEBUGMODE).
+-define(DEBUG(S), io:format("dbg: "++S)).
+-else.
+-define(DEBUG(S), ok).
+-endif.
 
 %% API
 -export([add/2, hello/0, greet_and_add_two/1]).
