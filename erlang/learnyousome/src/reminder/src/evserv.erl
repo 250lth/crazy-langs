@@ -137,7 +137,7 @@ loop(S=#state{}) ->
 %% internal funcs
 valid_datetime({Date, Time}) ->
   try
-      calendar:valid_date(Date) andalso valid_datetime(Time)
+      calendar:valid_date(Date) andalso valid_time(Time)
   catch
       error:function_clause  ->
         false
