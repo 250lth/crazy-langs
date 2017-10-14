@@ -12,8 +12,14 @@ object ListTest {
     case _ => 101
   }
 
+  val xs: List[Int] = List(1,2,3,4,5)
+  val ex1 = dropWhile(xs, (x: Int) => x < 4)
+  val ex2 = dropWhile2(xs)(x => x < 4)
+
   def main(args: Array[String]): Unit = {
     println(x)
+    println(ex1)
+    println(ex2)
   }
 
 }
