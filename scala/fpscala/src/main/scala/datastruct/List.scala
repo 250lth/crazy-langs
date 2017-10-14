@@ -87,6 +87,65 @@ object List {
     }
   }
 
+  // Using folding
+  def foldRight[A, B](as: List[A], z: B)(f: (A, B) => B): B = {
+    as match {
+      case Nil => z
+      case Cons(x, xs) => f(x, foldRight(xs, z)(f))
+    }
+  }
+
+  def sum2(ns: List[Int]) =
+    foldRight(ns, 0)((x, y) => x + y)
+
+  def product2(ns: List[Double]) =
+    foldRight(ns, 1.0)(_ * _)
+
+  def length[A](l: List[A]): Int =
+    foldRight(l, 0)((_, acc) => acc + 1)
+
+  @annotation.tailrec
+  def foldLeft[A, B](as: List[A], z: B)(f: (B, A) => B): B = {
+    as match  {
+      case Nil => z
+      case Cons(h, t) => foldLeft(t, f(z, h))(f)
+    }
+  }
+
+  def sum3(l: List[Int]) =
+    foldLeft(l, 0)(_ + _)
+
+  def product3(l: List[Double]) =
+    foldLeft(l, 1.0)(_ * _)
+
+  def length2[A](l: List[A]): Int =
+    foldLeft(l, 0)((acc, h) => acc + 1)
+
+  def reverse[A](l: List[A]): List[A] =
+    foldLeft(l, List[A]())((acc, h) => Cons(h, acc))
+
+  // This gonna be hard
+  def foldRightViaFoldLeft[A, B](l: List[A], z: B)(f: (A, B) => B): B = {
+    foldLeft(reverse(l), z)((b, a) => f(a, b))
+  }
+
+  def foldRightViaFoldLeft1[A, B](l: List[A], z: B)(f: (A, B) => B): B = {
+    foldLeft(l, (b: B) => b)((g, a) => b => g(f(a, b)))(z)
+  }
+
+  def foldLeftViaFoldRight[A, B](l: List[A], z: B)(f: (B, A) => B): B = {
+    foldRight(l, (b: B) => b)((a, g) => b => g(f(b, a)))(z)
+  }
+
+  def appendViaFoldRight[A](l: List[A], r: List[A]): List[A] = {
+    foldRight(l, r)(Cons(_, _))
+  }
+
+  // This gonna be hard
+  def concat[A](l: List[List[A]]): List[A] = {
+    foldRight(l, Nil: List[A])(append)
+  }
+
 
 
 }
