@@ -40,6 +40,10 @@ defmodule MyList do
   defp do_caesar(base, n) do
     ?a + rem(base - ?a + n, ?z - ?a + 1)
   end
+
+  def span(from, to) when from > to and is_number(from) and is_number(to), do: []
+  def span(from, to) when from <= to and is_number(from) and is_number(to), do: [from | span(from + 1, to)]
+
 end
 
 MyList.len([]) |> IO.puts
