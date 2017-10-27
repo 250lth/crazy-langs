@@ -26,4 +26,29 @@ defmodule Parse do
   defp _calctype([ ?\s | tail ], value), do: _calctype(tail, value)
   defp _calctype([ unexpected | _ ], _), do: raise "Invalid digit '#{[unexpected]}"
 
+  def centre(wordlist) do
+    wordlist
+    |> Enum.reduce(0, &(Enum.max([String.length(&1), &2])))
+    |> _align(wordlist)
+  end
+
+  defp _align(_, []), do: []
+  defp _align(longest, [h|t]) do
+    this_word_len = String.length(h)
+    IO.inspect String.rjust(h, div(longest - this_word_len, 2) + this_word_len)
+    _align(longest, t)
+  end
+
+  def capitalize_sentences(string) do
+    string
+    |> String.split(".")
+    |> Enum.map_join(". ", &clean_element(&1))
+  end
+
+  defp clean_element(word) do
+    word
+    |> String.lstrip(?\s)
+    |> String.capitalize
+  end
+
 end
