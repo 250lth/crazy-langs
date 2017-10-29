@@ -18,3 +18,5 @@ erl_crash.dump
 
 # Also ignore archive artifacts (built via "mix archive.build").
 *.ez
+将删除 .idea/
+将删除 issues.iml
