@@ -52,7 +52,6 @@ defmodule Issues.CLI do
   def process({user, project, count}) do
     Issues.GithubIssues.fetch(user, project)
     |> decode_response
-    |> convert_to_list_of_hashdicts
     |> sort_into_ascending_order
     |> Enum.take(count)
     |> print_table_for_columns(["number", "created_at", "title"])
@@ -64,11 +63,6 @@ defmodule Issues.CLI do
     {_, message} = List.keyfind(error, "message", 0)
     IO.puts "Error fetching from Github: #{message}"
     System.halt(2)
-  end
-
-  def convert_to_list_of_hashdicts(list) do
-    list
-    |> Enum.map(&Enum.into(&1, HashDict.new))
   end
 
   def sort_into_ascending_order(list_of_issues) do

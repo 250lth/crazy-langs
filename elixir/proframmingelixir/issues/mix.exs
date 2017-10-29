@@ -4,7 +4,7 @@ defmodule Issues.Mixfile do
   def project do
     [
       app: :issues,
-      escript: escript_config,
+      escript: escript_config(),
       version: "0.1.0",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
