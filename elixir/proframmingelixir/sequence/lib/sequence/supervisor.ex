@@ -14,7 +14,7 @@ defmodule Sequence.Supervisor do
   def start_workers(sup, initial_number) do
     { :ok, stash } =
       Supervisor.start_child(sup, worker(Sequence.Stash, [initial_number]))
-    Supervisor.start_link(sup, supervisor(Sequence.SubSupervisor, [stash]))
+    Supervisor.start_child(sup, supervisor(Sequence.SubSupervisor, [stash]))
   end
 
   def init(_) do
