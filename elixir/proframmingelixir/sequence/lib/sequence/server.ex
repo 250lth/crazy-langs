@@ -5,6 +5,7 @@ defmodule Sequence.Server do
 
   use GenServer
 
+  @vsn "0"
   #def start_link(state, opts) do
    # GenServer.start_link(__MODULE__, state, opts)
   #end
