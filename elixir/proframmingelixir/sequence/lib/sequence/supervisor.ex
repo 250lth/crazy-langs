@@ -18,6 +18,7 @@ defmodule Sequence.Supervisor do
   end
 
   def init(_) do
-    supervise [], stragegy: :one_for_one
+    supervise [], strategy: :one_for_one
   end
+
 end

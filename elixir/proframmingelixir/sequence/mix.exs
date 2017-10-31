@@ -15,7 +15,8 @@ defmodule Sequence.Mixfile do
   def application do
     [
       extra_applications: [:logger],
-      mod: {Sequence.Application, []}
+      mod: {Sequence.Application, 456},
+      registered: [ Sequence.Server ]
     ]
   end
 
