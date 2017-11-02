@@ -2,6 +2,7 @@ defmodule HelloWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :hello
 
   socket "/socket", HelloWeb.UserSocket
+  socket "/admin-socket", HelloWeb.AdminSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
