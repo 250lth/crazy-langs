@@ -33,6 +33,10 @@ defmodule HelloWeb.Router do
 
   end
 
+  scope "/", HelloWeb do
+    get "/redirect_test", PageController, :redirect_test, as: :rediredct_test
+  end
+
   scope "/admin", HelloWeb.Admin, as: :admin do
     pipe_through :browser
 
