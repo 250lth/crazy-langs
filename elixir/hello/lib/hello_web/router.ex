@@ -23,6 +23,8 @@ defmodule HelloWeb.Router do
 
     get "/images", ImageController, :index
 
+    get "/test", PageController, :test
+
     resources "/users", UserController do
       resources "/posts", PostController
     end

@@ -19,4 +19,8 @@ defmodule HelloWeb.PageController do
     text conn, "Redirect!!"
   end
 
+  def test(conn, _params) do
+    render conn, "text.html"
+  end
+
 end
