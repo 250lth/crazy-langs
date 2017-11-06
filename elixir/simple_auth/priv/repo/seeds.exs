@@ -9,3 +9,9 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+
+SimpleAuth.Repo.delete_all SimpleAuth.User
+
+SimpleAuth.User.changeset(%SimpleAuth.User{}, %{name: "Test User", email: "testuser@example.com", password: "secret", password_confirmation: "secret"})
+|> SimpleAuth.Repo.insert!
+|> Coherence.ControllerHelpers.confirm!

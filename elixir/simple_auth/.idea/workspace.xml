@@ -2,56 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f18167d4-962b-4e3f-9e88-5450e1165e43" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/static/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/static/images/phoenix.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proframmingelixir/lib/macros/dumper.exs" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proframmingelixir/lib/macros/my_if.ex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/brunch-config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/app.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/phoenix.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/socket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/package-lock.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/static/robots.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/config.exs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/dev.exs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/prod.exs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/test.exs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/simple_auth.ex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/simple_auth/application.ex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/simple_auth/repo.ex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/simple_auth_web.ex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/simple_auth_web/channels/user_socket.ex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/simple_auth_web/controllers/page_controller.ex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/simple_auth_web/endpoint.ex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/simple_auth_web/gettext.ex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/simple_auth_web/router.ex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/simple_auth_web/templates/layout/app.html.eex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/simple_auth_web/templates/page/index.html.eex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/simple_auth_web/views/error_helpers.ex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/simple_auth_web/views/error_view.ex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/simple_auth_web/views/layout_view.ex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/simple_auth_web/views/page_view.ex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mix.exs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mix.lock" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/priv/gettext/en/LC_MESSAGES/errors.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/priv/gettext/errors.pot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/priv/repo/seeds.exs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/simple_auth_web/controllers/page_controller_test.exs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/simple_auth_web/views/error_view_test.exs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/simple_auth_web/views/layout_view_test.exs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/simple_auth_web/views/page_view_test.exs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/support/channel_case.ex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/support/conn_case.ex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/support/data_case.ex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/test_helper.exs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proframmingelixir/.idea/misc.xml" afterPath="$PROJECT_DIR$/../proframmingelixir/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proframmingelixir/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../proframmingelixir/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proframmingelixir/lib/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../proframmingelixir/lib/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/config.exs" afterPath="$PROJECT_DIR$/config/config.exs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/simple_auth_web/router.ex" afterPath="$PROJECT_DIR$/lib/simple_auth_web/router.ex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mix.lock" afterPath="$PROJECT_DIR$/mix.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/priv/repo/seeds.exs" afterPath="$PROJECT_DIR$/priv/repo/seeds.exs" />
     </list>
     <ignored path="$PROJECT_DIR$/assets/_build/dev/lib/phoenix/ebin/" />
     <ignored path="$PROJECT_DIR$/assets/_build/test/lib/phoenix/ebin/" />
@@ -81,7 +41,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mix.exs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mix.exs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mix.exs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
@@ -91,7 +51,84 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="router.ex" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/simple_auth_web/router.ex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schemas.ex" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/simple_auth/coherence/schemas.ex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="repo.ex" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/simple_auth/repo.ex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.ex" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/simple_auth/application.ex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.ex" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/simple_auth/coherence/user.ex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seeds.exs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/priv/repo/seeds.exs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mix.lock" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mix.lock">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Elixir Module" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -105,6 +142,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/mix.exs" />
+        <option value="$PROJECT_DIR$/priv/repo/seeds.exs" />
+        <option value="$PROJECT_DIR$/lib/simple_auth_web/router.ex" />
+        <option value="$PROJECT_DIR$/lib/simple_auth/accounts/user.ex" />
+        <option value="$PROJECT_DIR$/lib/simple_auth/coherence/user.ex" />
       </list>
     </option>
   </component>
@@ -121,7 +162,7 @@
     <option name="x" value="1440" />
     <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -183,7 +224,25 @@
               <item name="simple_auth" type="b2602c69:ProjectViewProjectNode" />
               <item name="simple_auth" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="simple_auth" type="462c0819:PsiDirectoryNode" />
+              <item name="coherence" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple_auth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple_auth" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="simple_auth_web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple_auth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple_auth" type="462c0819:PsiDirectoryNode" />
+              <item name="priv" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple_auth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple_auth" type="462c0819:PsiDirectoryNode" />
+              <item name="priv" type="462c0819:PsiDirectoryNode" />
+              <item name="repo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -197,6 +256,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="add_unversioned_files" value="true" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -301,6 +361,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f18167d4-962b-4e3f-9e88-5450e1165e43" name="Default" comment="" />
@@ -308,15 +371,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1509952871801</updated>
-      <workItem from="1509952873034" duration="385000" />
+      <workItem from="1509952873034" duration="2322000" />
     </task>
+    <task id="LOCAL-00001" summary="init coherence auth">
+      <created>1509953303296</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1509953303296</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init coherence auth">
+      <created>1509955152992</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1509955152992</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="385000" />
+    <option name="totallyTimeSpent" value="2322000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="23" width="1920" height="1057" extended-state="6" />
+    <frame x="1440" y="23" width="1920" height="1053" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -327,10 +405,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3308977" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -353,6 +431,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init coherence auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="init coherence auth" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -370,6 +452,70 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="62" lean-forward="false" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/simple_auth_web/router.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/simple_auth/accounts/user.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/simple_auth/repo.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/simple_auth/application.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/simple_auth/coherence/user.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/simple_auth/coherence/schemas.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mix.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/priv/repo/seeds.exs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
