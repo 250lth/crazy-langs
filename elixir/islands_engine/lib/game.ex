@@ -5,14 +5,18 @@ defmodule IslandsEngine.Game do
 
   defstruct player1: :none, player2: :none
 
-  def start_link(name) when not is_nil name do
-    GenServer.start_link(__MODULE__, name)
+  def start_link(name) when is_binary(name) and byte_size(name) > 0 do
+    GenServer.start_link(__MODULE__, name, name: {:global, "game:#{name}"})
   end
 
   def init(name) do
     {:ok, player1} = Player.start_link(name)
     {:ok, player2} = Player.start_link()
     {:ok, %Game{player1: player1, player2: player2}}
+  end
+
+  def stop(pid) do
+    GenServer.cast(pid, :stop)
   end
 
   def call_demo(game) do
@@ -67,6 +71,10 @@ defmodule IslandsEngine.Game do
 
   def handle_cast(:demo, state) do
     {:noreply, %{state | test: "new value"}}
+  end
+
+  def handle_cast(:stop, state) do
+    {:stop, :normal, state}
   end
 
   ### private funcs
