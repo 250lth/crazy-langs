@@ -16,6 +16,7 @@ defmodule ThrowawayWeb.Router do
   scope "/", ThrowawayWeb do
     pipe_through :browser # Use the default browser stack
 
+    get "/hello/:name", HelloController, :world
     get "/", PageController, :index
   end
 

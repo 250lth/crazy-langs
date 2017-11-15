@@ -1,0 +1,2 @@
+<h1>From template: A Throwaway Project...</h1>
+<h1>Hello <%=String.capitalize @name %>!</h1>
