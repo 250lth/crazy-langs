@@ -1,17 +1,27 @@
 defmodule Pooly do
-  @moduledoc """
-  Documentation for Pooly.
-  """
+  use Application
 
-  @doc """
-  Hello world.
+  def start(_type, _args) do
+    pool_config = [mfa: {SampleWorker, :start_link, []}, size: 5]
+    start_pool(pool_config)
+  end
 
-  ## Examples
+  def start_pool(pool_config) do
+    Pooly.Supervisor.start_link(pool_config)
+  end
 
-      iex> Pooly.hello
-      :world
+  def checkout do
+    Pooly.Server.checkout
+  end
 
-  """
+  def checkin(worker_pid) do
+    Pooly.Server.checkin(worker_pid)
+  end
+
+  def status do
+    Pooly.Server.status
+  end
+
   def hello do
     :world
   end
