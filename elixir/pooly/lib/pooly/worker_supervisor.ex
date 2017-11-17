@@ -5,12 +5,14 @@ defmodule Pooly.WorkerSupervisor do
 
   ### API
   def start_link({_,_,_} = mfa) do
-    Supervisor.start_link(__MODULE__, mfa)
+    Supervisor.start_link(__MODULE__, [pool_server, mfa])
   end
 
   ### CALLBACKs
-  def init({m,f,a}) do
-    worker_opts = [restart: :permanent,
+  def init([pool_server, {m,f,a}]) do
+    Process.link(pool_server)
+    worker_opts = [restart: :temporary,
+                    shutdown: 5000,
                     function: f]
     children = [worker(m, a, worker_opts)]
 
