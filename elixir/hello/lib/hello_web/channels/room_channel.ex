@@ -1,12 +1,12 @@
 defmodule HelloWeb.RoomChannel do
-  use HelloWeb, :channel
+  use Phoenix.Channel
 
-  def join("room:lobby", payload, socket) do
-    if authorized?(payload) do
-      {:ok, socket}
-    else
-      {:error, %{reason: "unauthorized"}}
-    end
+  def join("room:lobby", _message, socket) do
+    {:ok, socket}
+  end
+
+  def join("room:" <> _private_room_id, _params, _socket) do
+    {:error, %{reason: "unauthorized"}}
   end
 
   # Channels can be used in a request/response fashion
