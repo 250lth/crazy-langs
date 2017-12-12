@@ -26,3 +26,22 @@ config :logger, :console,
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env}.exs"
+
+# %% Coherence Configuration %%   Don't remove this line
+config :coherence,
+  user_schema: CoherenceDemo.User,
+  repo: CoherenceDemo.Repo,
+  module: CoherenceDemo,
+  web_module: CoherenceDemo.Web,
+  router: CoherenceDemo.Router,
+  messages_backend: CoherenceDemo.Coherence.Messages,
+  logged_out_url: "/",
+  user_active_field: true,
+  email_from_name: "Your Name",
+  email_from_email: "yourname@example.com",
+  opts: [:confirmable, :rememberable, :registerable, :invitable, :authenticatable, :recoverable, :lockable, :trackable, :unlockable_with_token]
+
+config :coherence, CoherenceDemo.Coherence.Mailer,
+  adapter: Swoosh.Adapters.Sendgrid,
+  api_key: "your api key here"
+# %% End Coherence Configuration %%
