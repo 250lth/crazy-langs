@@ -7,7 +7,7 @@ defmodule HelloWeb.PageController do
     #|> render "index.html"
     #redirect conn, to: "/redirect_test"
     pages = [%{title: "foo"}, %{title: "bar"}]
-    render conn, "index.json", pages: pages
+    render conn, "index.html"
   end
 
   def show(conn, _params) do
