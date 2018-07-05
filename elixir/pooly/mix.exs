@@ -1,12 +1,12 @@
-defmodule Pooly.Mixfile do
+defmodule Pooly.MixProject do
   use Mix.Project
 
   def project do
     [
       app: :pooly,
       version: "0.1.0",
-      elixir: "~> 1.5",
-      start_permanent: Mix.env == :prod,
+      elixir: "~> 1.6",
+      start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
   end
@@ -15,7 +15,7 @@ defmodule Pooly.Mixfile do
   def application do
     [
       extra_applications: [:logger],
-      #      mod: {Pooly, []}
+      mod: {Pooly, []}
     ]
   end
 
