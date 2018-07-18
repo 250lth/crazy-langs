@@ -19,7 +19,6 @@ defmodule HelloWeb.Endpoint do
     plug Phoenix.CodeReloader
   end
 
-  plug Plug.RequestId
   plug Plug.Logger
 
   plug Plug.Parsers,
@@ -36,7 +35,7 @@ defmodule HelloWeb.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_hello_key",
-    signing_salt: "9ybZpPsK"
+    signing_salt: "Zr5xPj1I"
 
   plug HelloWeb.Router
 

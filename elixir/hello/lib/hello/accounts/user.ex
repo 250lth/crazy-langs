@@ -1,20 +1,23 @@
 defmodule Hello.Accounts.User do
   use Ecto.Schema
   import Ecto.Changeset
-  alias Hello.Accounts.User
+
+  alias Hello.Accounts.{User, Credential}
 
 
   schema "users" do
-    field :age, :integer
     field :name, :string
+    field :username, :string
+    has_one :credential, Credential
 
     timestamps()
   end
 
   @doc false
-  def changeset(%User{} = user, attrs) do
+  def changeset(user, attrs) do
     user
-    |> cast(attrs, [:name, :age])
-    |> validate_required([:name, :age])
+    |> cast(attrs, [:name, :username])
+    |> validate_required([:name, :username])
+    |> unique_constraint(:username)
   end
 end

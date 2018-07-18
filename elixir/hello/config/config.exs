@@ -12,7 +12,7 @@ config :hello,
 # Configures the endpoint
 config :hello, HelloWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "D1h5Jo7q+AumY/kiQc040YlcLQEpnF6SJC/rKP5ukpn4xc8aG2OYy5ySPjwT60MC",
+  secret_key_base: "5z7c8MwuDl60pG8m4qzKsa97y1ze1w5esWRoZ1/Z6DF/fi3ZdwntmpVpuHQ3Kevj",
   render_errors: [view: HelloWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Hello.PubSub,
            adapter: Phoenix.PubSub.PG2]
@@ -20,7 +20,7 @@ config :hello, HelloWeb.Endpoint,
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
-  metadata: [:request_id]
+  metadata: [:user_id]
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
