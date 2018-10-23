@@ -33,19 +33,57 @@ data Command : Schema -> Type where
   Quit : Command schema
 
 parsePrefix : (schema : Schema) -> String -> Maybe (SchemaType schema, String)
+parsePrefix SString input = getQuoted (unpack input)
+  where
+    getQuoted : List Char -> Maybe (String, String)
+    getQuoted ('"' :: xs)
+      = case span (/= '"') xs of
+             (quoted, '"' :: rest) => Just (pack quoted, ltrim (pack rest))
+             _ => Nothing
+    getQuoted _ = Nothing
+parsePrefix SInt input = case span isDigit input of
+                              ("", rest) => Nothing
+                              (num, rest) => Just (cast num, ltrim rest)
+parsePrefix (schemal .+. schemar) input
+  = case parsePrefix schemal input of
+         Nothing => Nothing
+         Just (l_val, input') =>
+                                case parsePrefix schemar input' of
+                                     Nothing => Nothing
+                                     Just (r_val, input'') => Just ((l_val, r_val), input'')
 
 parseBySchema : (schema : Schema) -> String -> Maybe (SchemaType schema)
 parseBySchema schema input = case parsePrefix schema input of
                                   Just (res, "") => Just res
                                   Just _ => Nothing
                                   Nothing => Nothing
+parseSchema : List String -> Maybe Schema
+parseSchema ("String" :: xs)
+  = case xs of
+         [] => Just SString
+         _ => case parseSchema xs of
+                   Nothing => Nothing
+                   Just xs_sch => Just (SString .+. xs_sch)
+parseSchema ("Int" :: xs)
+  = case xs of
+         [] => Just SInt
+         _ => case parseSchema xs of
+                   Nothing => Nothing
+                   Just xs_sch => Just (SInt .+. xs_sch)
+parseSchema _ = Nothing
 
 parseCommand : (schema : Schema) -> String -> String -> Maybe (Command schema)
-parseCommand schema "add" rest = Just (Add (?parseBySchema rest))
+parseCommand schema "add" rest = case parseBySchema schema rest of
+                                      Nothing => Nothing
+                                      Just restok => Just (Add restok)
 parseCommand schema "get" val = case all isDigit (unpack val) of
                                      False => Nothing
                                      True => Just (Get (cast val))
 parseCommand schema "quit" "" = Just Quit
+parseCommand schema "schema" rest
+  = case parseSchema (words rest) of
+         Nothing => Nothing
+         Just schemaok => Just (SetSchema schemaok)
 parseCommand _ _ _ = Nothing
 
 parse : (schema : Schema) -> (input : String) -> Maybe (Command schema)
