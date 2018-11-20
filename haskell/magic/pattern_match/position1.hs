@@ -20,6 +20,3 @@ getX p = let MakePosition x _ = p
 getY :: Position -> Double
 getY p = let MakePosition _ y = p
           in y
-
-pointFoo :: MakePosition
-pointFoo = MakePosition 3 4
