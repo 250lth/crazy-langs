@@ -1,0 +1,7 @@
+defmodule LiveViewTodoWeb.PageController do
+  use LiveViewTodoWeb, :controller
+
+  def index(conn, _params) do
+    render(conn, "index.html")
+  end
+end
